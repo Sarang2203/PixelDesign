@@ -83,6 +83,18 @@
     });
   </script>
 
+<script>
+  firebase.initializeApp(firebaseConfig);
+
+  const db = firebase.database();
+
+  // Simple test to push data
+  db.ref('test').set({ message: 'Hello Firebase!' })
+    .then(() => console.log('Test data written successfully'))
+    .catch((error) => console.error('Error writing test data:', error));
+</script>
+
+
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
