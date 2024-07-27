@@ -154,7 +154,6 @@ fetch('footer.html')
 
 </script>
 
-<script src="js/portfolio.js"></script>
 
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -215,38 +214,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-<script>
-  document.getElementById('downloadButton').addEventListener('click', function() {
-  // PDF file URL
-  var pdfUrl = 'html/Images/Rate%20Card%202023.pdf';
-
-  // Fetch the PDF file
-  fetch(pdfUrl)
-    .then(response => response.blob())
-    .then(blob => {
-      // Create a URL for the blob
-      var url = URL.createObjectURL(blob);
-
-      // Create an anchor element
-      var a = document.createElement('a');
-      a.href = url;
-      a.download = 'PixelDesign.pdf'; // Set the default file name
-
-      // Append the anchor element to the body
-      document.body.appendChild(a);
-
-      // Trigger a click event on the anchor element to start the download
-      a.click();
-
-      // Remove the anchor element from the body
-      document.body.removeChild(a);
-    })
-    .catch(error => {
-      console.error('Error downloading PDF:', error);
-    });
-});
-
-</script>
 
 </body>
 </html>
