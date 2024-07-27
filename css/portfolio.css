@@ -1,0 +1,55 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  overflow: visible; /* Allow overflow to show zoomed images */
+}
+
+/* Grid Item */
+.grid-item {
+  position: relative;
+  overflow: visible; /* Allow overflow to show zoomed images */
+  height: auto;
+  width: 100%;
+  transition: z-index 0.5s ease; /* Smooth z-index transition */
+}
+
+/* Grid Media (Image and Video) */
+.grid-media {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease, z-index 0.5s ease; /* Smooth zoom effect */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Zoom Effect on Hover */
+.grid-item:hover {
+  z-index: 10; /* Bring to front */
+}
+
+.grid-item:hover .grid-media {
+  transform: scale(1.2); /* Zoom effect */
+  z-index: 10; /* Ensure zoomed element is in front */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

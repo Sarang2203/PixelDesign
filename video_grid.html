@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Grid Layout</title>
+  <link rel="stylesheet" href="css/video_grid.css">
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <video src="Images/portfolio_v1.mp4" class="grid-video" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+    </div>
+    <div class="grid-item">
+      <video src="Images/Intellieaze_.mp4" class="grid-video" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+    </div>
+    <div class="grid-item">
+      <video src="Images/portfolio_v1.mp4" class="grid-video" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+    </div>
+    <div class="grid-item">
+      <video src="Images/portfolio_v1.mp4" class="grid-video" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+    </div>
+    <div class="grid-item">
+      <video src="Images/portfolio_v1.mp4" class="grid-video" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+    </div>
+    <div class="grid-item">
+      <video src="Images/portfolio_v1.mp4" class="grid-video" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video>
+    </div>
+  </div>
+
+  <script>
+    function playVideo(video) {
+      video.play();
+    }
+
+    function pauseVideo(video) {
+      video.pause();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* About Us Section styles */
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.booking-form {
+    flex: 1;
+    padding: 0 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow */
+    overflow: hidden; /* Hide overflow */
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-form iframe {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border: none; /* Remove border */
+}
+
+
+/* Plans Section styles */
+.plans {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.plan {
+    display: inline-block;
+    width: 30%;
+    margin: 0 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.plan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    margin-bottom: 20px;
+}
+
+.plan button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    background-color: #0056b3;
+}
+
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 50px 0; */
+  }
+  
+  .about {
+    flex: 1;
+    /* padding: 0 20px; */
+    margin-left: 6%;
+  }
+  
+  .about-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333; /* Choose a suitable color */
+    margin-bottom: 20px;
+  }
+  
+  .about-slogan {
+    font-size: 22px;
+    font-style: italic;
+    color: #007bff; /* Choose a suitable color */
+    margin-bottom: 30px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    line-height: 1.6; /* Adjust line height for better readability */
+    margin-bottom: 15px;
+    font-weight:500;
+  }
+  
+  .carousel-indicators .active {
+    background-color: black; /* Change the background color to black */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%); /* Invert the color of the control icons */
+  }
+
+   .carousel-indicators li {
+      background-color: grey !important; /* Change the background color of all indicators to grey */
+    }
+
+
+    .master {
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin-top: 5%;
+  }
+  
+  .master h1 {
+      font-weight: bold;
+      font-size: 40px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .master img {
+      margin-top: 20px;
+      padding: 10px;
+      max-width: 100%;
+      height: auto;
+  }
+
+
+  .main-title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;    
+  }
+  
+  .subtitle {
+    font-size: 25px;
+    color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  }
+
+  .latestwork {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.logo-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px; /* Add padding to center the images */
+  box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center; /* Align images in the center horizontally */
+}
+
+.logos-container img {
+  margin-top: 3%;
+  width: 150px; /* Increase width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adjust spacing between logos */
+}
+
+
+
+.footerbooking-form {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin: 20px;
+  background-color: #d4d4d4;
+  border: 2px solid #ccc;
+  padding-top: 20px;
+  border-radius: 5%;
+}
+
+.footerbooking-form p {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;    
+}
+
+.footerbooking-form h2.subtext {
+  font-size: 10px;
+  color: #000000;
+  font-family:'Courier New', Courier, monospace
+}
+
+.footerbooking-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-bottom: 30px;
+}
+
+.footerbooking-form button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.center-content {
+  padding: 0 0;
+}
+
+

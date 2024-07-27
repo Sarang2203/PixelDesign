@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+<div class="grid-container">
+  <!-- Repeat this block for each grid item -->
+  <div class="grid-item">
+    <img src="Images/portfolio_1.jpg" alt="Work 1" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <video src="Images/Intellieaze_.mp4" class="grid-media"></video>
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_2.jpg" alt="Work 2" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_3.jpg" alt="Work 3" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_4.jpg" alt="Work 4" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_5.jpg" alt="Work 5" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_6.jpg" alt="Work 6" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_7.jpg" alt="Work 7" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_8.jpg" alt="Work 8" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_9.jpg" alt="Work 9" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_10.jpg" alt="Work 10" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_11.jpg" alt="Work 11" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_12.jpg" alt="Work 12" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_13.jpg" alt="Work 13" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <img src="Images/portfolio_14.jpg" alt="Work 14" class="grid-media">
+  </div>
+
+  <div class="grid-item">
+    <video src="Images/portfolio_v1.mp4" class="grid-media"></video>
+  </div>
+  <div class="grid-item">
+    <video src="Images/Intellieaze_.mp4" class="grid-media"></video>
+  </div>
+  <div class="grid-item">
+    <video src="Images/portfolio_v1.mp4" class="grid-media"></video>
+  </div>
+  
+</div>
+
+<script>
+  function zoomMedia(media) {
+    media.classList.add('zoomed');
+    media.parentElement.style.zIndex = 10;
+    if (media.tagName === 'VIDEO') {
+      media.play();
+    }
+  }
+
+  function unzoomMedia(media) {
+    media.classList.remove('zoomed');
+    media.parentElement.style.zIndex = '';
+    if (media.tagName === 'VIDEO') {
+      media.pause();
+    }
+  }
+
+  // Add event listeners after the DOM is fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.grid-media').forEach(media => {
+      media.addEventListener('mouseover', () => zoomMedia(media));
+      media.addEventListener('mouseout', () => unzoomMedia(media));
+    });
+  });
+</script>
+</body>
+</html>

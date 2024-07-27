@@ -1,0 +1,62 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: black; /* Change text color to black */
+}
+
+/* Card Styles */
+.card {
+  border-radius: 10px;
+  box-shadow: #00508c;
+  
+}
+
+.card-title {
+  font-size: 2rem;
+  color: black; /* Change title color to black */
+}
+
+.card-body {
+  background-color: rgb(213, 212, 212);
+  border-radius: 3%;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 8px; /* Add border radius to form controls */
+  color: black; /* Change placeholder text color to black */
+  height: 45px; /* Increase input height */
+}
+
+::placeholder {
+  color: black; /* Change placeholder text color to black */
+}
+
+.btn-primary {
+  background-color: #006aac;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #00508c;
+}
+
+.container {
+  max-width: 600px; /* Reduce overall form width */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%; /* Adjust container width for smaller screens */
+    padding: 0 15px; /* Add padding to container for smaller screens */
+  }
+
+  .form-control {
+    height: 40px; /* Adjusted height for smaller screens */
+  }
+}

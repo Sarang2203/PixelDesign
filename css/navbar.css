@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-right: 1.25rem; /* Adjust spacing between navbar items */
+    font-size: medium;
+}
+
+.navbar ul li.logo {
+    padding: 1rem; /* Add padding around the logo */
+    margin-right: 22rem;
+}
+
+.navbar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s; /* Add transition effect for smoother color change */
+}
+
+.navbar ul li a:hover {
+    color: #0197f6; /* Change color to black on hover */
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+    white-space: nowrap; /* Prevent breaking into multiple lines */
+}
+
+.contact-info img {
+    margin-right: 0.5rem;
+    height: 24px; /* Set the height of the call icon */
+    width: 24px; /* Set the width of the call icon */
+}
+
+.contact-info span {
+    color: black;
+    font-size: medium;
+}
+
+button {
+    background-color: #006aac;
+    color: white;
+    border: none;
+    padding: 0.2rem 1.295rem;
+    border-radius: 0.3125rem;
+    margin-right: 1.25rem; /* Add margin to the right of the button */
+}
+
+li:last-child button {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+
+
+.navbar ul li.logo img {
+    height: 40px; /* Set the height of the logo */
+    width: auto; /* Automatically adjust the width to maintain aspect ratio */
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+        margin-bottom: 0.625rem; /* Adjust spacing between navbar items for smaller screens */
+    }
+
+    .navbar ul li.logo {
+        margin: 0 auto 1rem auto; /* Center logo on smaller screens */
+    }
+
+    .navbar ul li a, .contact-info, button {
+        font-size: large; /* Increase font size for better readability on smaller screens */
+        width: 100%; /* Make links and button take full width */
+        text-align: center; /* Center align text */
+    }
+
+    .contact-info {
+        justify-content: center; /* Center align contact info */
+    }
+
+    .contact-info img {
+        height: 20px; /* Adjust height for mobile screens */
+        width: 20px; /* Adjust width for mobile screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+        margin-bottom: 0.625rem; /* Adjust spacing between navbar items for smaller screens */
+    }
+
+    .navbar ul li.logo {
+        margin: 0 auto 1rem auto; /* Center logo on smaller screens */
+    }
+
+    .navbar ul li a, .contact-info, button {
+        font-size: large; /* Increase font size for better readability on smaller screens */
+        width: 100%; /* Make links and button take full width */
+        text-align: center; /* Center align text */
+    }
+
+    .contact-info {
+        justify-content: center; /* Center align contact info */
+    }
+
+    .contact-info img {
+        height: 20px; /* Adjust height for mobile screens */
+        width: 20px; /* Adjust width for mobile screens */
+    }
+}
